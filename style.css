@@ -21,9 +21,9 @@
 }
 
 .logo{
-    width: 70px;
+    width: 50px;
     cursor: pointer;
-    margin: 40px 0;
+    margin: 26px 0;
 }
 
 nav{
@@ -41,10 +41,12 @@ nav ul li a{
     text-decoration: none;
     color: #000;
     font-size: 14px;
+    color: white;
 }
 
 nav ul li a:hover{
-    color: white;
+    color:black;
+    background:white;
 }
 
 .row{
@@ -89,7 +91,7 @@ button{
     padding: 12px 10px;
     outline: none;
     color: #fff;
-    background: linear-gradient(to right, #fb5283, #ff3527);
+    background: linear-gradient(to right, #7752fb, #3d27ff);
     border-radius: 6px;
     cursor: pointer;
     transition: width 0.5s;
@@ -106,7 +108,7 @@ button:hover{
     container: '';
     width: 10px; 
     height: 57px;
-    background: linear-gradient(#ff469f, #ff6062);
+    background: linear-gradient(to right, #7752fb, #3d27ff);
     left: -40px;  
     top: 8px;
 }
@@ -119,7 +121,7 @@ button:hover{
 }
 
 .col-2 .controller{
-    width: 800%;
+    width: 500px;
 }
 
 .social-links img{
@@ -135,7 +137,7 @@ button:hover{
 @media only screen and (max-width:700px){
     nav ul{
         width: 100%;
-        background: linear-gradient(#ff54a2, #ff575a);
+        background: linear-gradient(to right, #7752fb, #3d27ff);
         position: absolute;
         top: 75px;
         right: 0;
@@ -155,4 +157,33 @@ button:hover{
     .menuIcon{
         display: block;
     }
+
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+        margin-top: 70px;
+        margin-left: 45px;
+    }
+
+    .col-2 .controller{
+        width: 77%;
+    }
+
+    .col-1{
+        flex-basis: 100%;
+    }
+
+    .col-1 h2{
+        font-size: 35px;
+    }
+
+    .col-1 h3{
+        font-size: 15px;
+    }
 }
+
